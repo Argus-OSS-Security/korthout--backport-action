@@ -1,9 +1,10 @@
 name: CI
 
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types: [opened, synchronize, reopened]
+# 
 jobs:
   build:
     runs-on: ubuntu-latest

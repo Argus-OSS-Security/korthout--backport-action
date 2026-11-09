@@ -1,11 +1,12 @@
 name: Publish
 
-on:
-  push:
-    branches:
-      - main
-      - 'release-*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#       - 'release-*'
+# 
 concurrency:
   group: publish-${{ github.ref }}
   cancel-in-progress: true

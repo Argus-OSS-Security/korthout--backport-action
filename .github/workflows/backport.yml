@@ -1,9 +1,10 @@
 name: Backport merged pull request
-on:
-  pull_request_target:
-    types: [closed]
-  issue_comment:
-    types: [created]
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types: [closed]
+#   issue_comment:
+#     types: [created]
 permissions: {} # the job uses the backport-action app's token, not GITHUB_TOKEN
 jobs:
   backport:
